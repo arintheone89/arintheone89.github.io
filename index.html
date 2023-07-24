@@ -1,10 +1,104 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-This is the header
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CS498 DDV Final D3.js Visualization - Arindam Chakraborty</title>
+	<meta name="author" content="Arindam Chakraborty" />
+	<meta name="Resource-type" content="Document" />
+
+<!-- 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/slides.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/bubble_chart.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/zoomable_sunburst.css" />
+	<link rel="stylesheet" type="text/css" href="css/linechart.css" />
+	<link rel="stylesheet" type="text/css" href="css/annotations.css" />
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!-- import d3.v3 -->
+	<script type="text/javascript" src="js/d3.v3.js"></script>
+
+	<!-- import fullPage -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+	<!-- import d3.v4 -->
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<script type="text/javascript" src="js/d3-annotation.min.js"></script>
+
 </head>
-
 <body>
-<h1>
-  UIUC project for arintheone
+<div id="fullpage">
+	<div class="section" id="title">
+		<div id="title_text">
+			<h1>CA, FL, LA Resturant ratines and cuisines trends</h1>
+		</div>
+	</div>
+	<div class="section" id="background_bw">
+		<div id="bubble_title"><h1>Overview of All Reviewed Restaurants</h1></div>
+		<div id="bubble_content">
+			<div id="bubble_text">
+				<p>​We are able to see that the bulk of the reviews are from NV with a star rating between 2-4.</p>
+			</div>
+			<div id="bubble_container">
+				<div id="toolbar">
+					<a href="#" id="all" class="button active">All Reviews</a>
+					<a href="#" id="state" class="button">Reviews By State</a>
+					<a href="#" id="stars" class="button">Reviews By Average Star Ratings</a>
+				</div>
+				<div id="vis"></div>
+			</div>
+		</div>
+	</div>	
+	<div class="section" id="background_bw">
+		<div id="zsb_title"><h1>Top 25 Most Reviewed Restaurants</h1></div>
+		<div id="zsb_content">
+			<div id="zsb_text">
+				<p>​When the categories are consolidated into the Top 24 + Others, we can see that American New is the most reviewed restaurant 
+					category. The spread between states do not seem to affect the ranking of restaurant categories either.</p>
+			</div>
+			<div id="zsb_container">
+				<div id="zoomable_sunburst"></div>
+			</div>
+		</div>
+	</div>	
+	<div class="section" id="background_bw">
+		<div id="linechart_title"><h1>Customer Checkins per Hour per Category</h1></div>
+		<div id="linechart_content">
+			<div id="linechart_text">
+				<p>Aggregating the hourly check-ins per restaurant categories for NV reveals a consistent trend. Regardless of the day of the week, 
+					there is a cyclic relationship between the number of check-ins and the time of the day. The amount of check-ins peaks out near 
+					the end of the day with a general increase over the weekend.</p>
+			</div>
+			<div id="linechart_container">
+				<div id="linechart"></div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="analytics">
+		<div id="content_div">
+			<h1>Findings</h1>
+			<p>​The initial analysis based on the Yelp Academic Dataset shows that a prospective restaurant owner should choose to open an 
+				<span id="emphasize">American New</span> styled restaurant. The location should be in <span id="emphasize">NV</span> where 
+				there were the most amount of reviews logged. The restaurant should focus of the <span id="emphasize">evening</span> and 
+				<span id="emphasize">weekend</span> crowds with possibly reducing staffing during the day as the amount of people tapers off.</p>
+		</div>
+	</div>	
+</div>
 
-</h1>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/bubble_chart.js"></script>
+<script type="text/javascript" src="js/zoomable_sunburst.js"></script> 
+<script type="text/javascript" src="js/linechart.js"></script>
+<script type="text/javascript" src="js/annotations.js"></script> 
+
 </body>
+</html>
