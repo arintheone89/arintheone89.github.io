@@ -1,4 +1,4 @@
-﻿business_id,name,state,stars,review_count,categories
+﻿id,name,state,stars,reviews,yelp_category
 _id__ab50qdWOk0DdB6XOrBitw,Acme Oyster House,LA,4,7568,Seafood
 _id_ac1AeYqs8Z4_e2X5M3if2A,Oceana Grill,LA,4,7400,Seafood
 _id_oBNrLz4EDhiscSlbOl8uAw,Ruby Slipper - New Orleans,LA,4.5,5193,American
