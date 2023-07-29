@@ -7,8 +7,8 @@ const bubble_state_annotations = [
     label: "LA contains the majority of the reviews",
     wrap: 190
     },
-    x: 500,
-    y: 550,
+    x: 200,
+    y: 300,
     dy: 160,
     dx: 120
 }]
