@@ -102,7 +102,8 @@ function bubbleChart() {
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal(d3.schemeCategory20c)
-    .domain(['AZ', 'IL', 'NC', 'NV', 'OH', 'PA', 'WI']);
+    // .domain(['AZ', 'IL', 'NC', 'NV', 'OH', 'PA', 'WI']);
+      .domain(['CA', 'LA', 'FL']);
 
   /*
    * This data manipulation function takes the raw data from
@@ -465,7 +466,7 @@ function addCommas(nStr) {
 }
 
 // Load the data.
-d3.csv('data/bubble_chart.csv', display);
+d3.csv('data/bubble_chart_200.csv', display);
 
 // setup the buttons.
 setupButtons();
