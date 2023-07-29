@@ -136,7 +136,6 @@ function bubbleChart() {
         id: d.id,
         radius: radiusScale(+d.reviews),
         reviews: +d.reviews,
-        price: +d.price,
         stars: +d.stars,
         name: d.yelp_category,
         state: d.state,
