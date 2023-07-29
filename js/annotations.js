@@ -4,13 +4,13 @@ const bubble_state_annotations = [
     type: d3.annotationLabel,
     note: {
     title: "Majority of Reviews",
-    label: "The state of NV contains the majority of the Yelp Dataset reviews",
+    label: "LA contains the majority of the reviews",
     wrap: 190
     },
     x: 500,
     y: 550,
-    dy: -160,
-    dx: -120
+    dy: 160,
+    dx: 120
 }]
 
 const bubble_state_makeAnnotations = d3.annotation()
