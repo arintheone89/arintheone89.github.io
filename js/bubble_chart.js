@@ -133,11 +133,11 @@ function bubbleChart() {
     // working with data.
     var myNodes = rawData.map(function (d) {
       return {
-        id: d.business_id,
-        radius: radiusScale(+d.review_count),
-        reviews: +d.review_count,
+        id: d.id,
+        radius: radiusScale(+d.reviews),
+        reviews: +d.reviews,
         stars: +d.stars,
-        name: d.categories,
+        name: d.yelp_category,
         state: d.state,
         x: Math.random() * 900,
         y: Math.random() * 800
