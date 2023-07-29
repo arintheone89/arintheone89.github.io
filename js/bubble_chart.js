@@ -21,13 +21,13 @@ function bubbleChart() {
   var center = { x: width / 2, y: height / 2 };
 
   var stateCenters = {
-    DE: { x: 3 * width / 16, y: height / 3 },
+    LA: { x: 3 * width / 16, y: height / 3 },
     ID: { x: width / 3, y: 2* height / 3 },
     IL: { x: 3 * width / 8, y: height / 3 },
     NJ: { x: width / 2, y: 2* height / 3 },
     CA: { x: 5 * width / 8, y: height / 3 },
     FL: { x: 2 * width / 3, y: 2* height / 3 },
-    LA: { x: 13 * width / 16, y: height / 3 }
+    DE: { x: 13 * width / 16, y: height / 3 }
   }
 
   var starCenters = {
@@ -40,13 +40,13 @@ function bubbleChart() {
 
   // X locations of the state titles.
   var stateTitle = {
-    DE: { x: width / 10, y: height / 8 },
+    LA: { x: width / 10, y: height / 8 },
     ID: { x: 9 * width / 40, y: 9 * height / 20 },
     IL: { x: 7 * width / 20, y: height / 8 },
     NJ: { x: width / 2, y: 9 * height / 20 },
     CA: { x: 13 * width / 20, y: height / 8 },
     FL: { x: 31 * width / 40, y: 9 * height / 20 },
-    LA: { x: 9 * width / 10, y: height / 8 }
+    DE: { x: 9 * width / 10, y: height / 8 }
   }
 
   var starTitle = {
@@ -102,7 +102,7 @@ function bubbleChart() {
   // Nice looking colors - no reason to buck the trend
   // @v4 scales now have a flattened naming scheme
   var fillColor = d3.scaleOrdinal(d3.schemeCategory20c)
-      .domain(['DE', 'ID', 'IL', 'NJ', 'CA', 'FL', 'LA']);
+      .domain(['LA', 'ID', 'IL', 'NJ', 'CA', 'FL', 'DE']);
 
   /*
    * This data manipulation function takes the raw data from
@@ -465,7 +465,7 @@ function addCommas(nStr) {
 }
 
 // Load the data.
-d3.csv('data/yelp_bubble_chart_400.csv', display);
+d3.csv('data/yelp_bubble_chart_top_200.csv', display);
 
 // setup the buttons.
 setupButtons();
