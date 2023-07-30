@@ -20,15 +20,13 @@ var zsb_svg = d3.select("#zoomable_sunburst").append("svg")
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");
 var yelp_tree = { "name":"Yelp Database","children":[] };
-// tooltip for mouseover functionality
 var zsb_tooltip = floatingTooltip('zsb_tooltip', 240);
 
 d3.csv("data/yelp_sun_top_200.csv", function(error, data) {
     if (error) throw error;
 
     data.forEach(function(d) {
-        // iterate through each row of csv data
-        var newcat = transverseTree(yelp_tree, d); // is this a new category? lets assume so & then correct
+        var newcat = transverseTree(yelp_tree, d); 
 
         if (newcat) {
             var yelp_category = {
@@ -63,10 +61,6 @@ d3.csv("data/yelp_sun_top_200.csv", function(error, data) {
         .on('mouseout', hideZSBDetail);        
 });
 
-/*
-* Function called on mouseover to display the
-* details of a path in the tooltip.
-*/
 function showZSBDetail(d) {
     var content = '<span class="name">Item: </span><span class="value">' +
                     d.data.name +
@@ -78,9 +72,6 @@ function showZSBDetail(d) {
     zsb_tooltip.showTooltip(content, d3.event);
 }
 
-/*
-* Hides tooltip
-*/
 function hideZSBDetail(d) {
     zsb_tooltip.hideTooltip();
 }
