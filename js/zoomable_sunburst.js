@@ -23,7 +23,7 @@ var yelp_tree = { "name":"Yelp Database","children":[] };
 // tooltip for mouseover functionality
 var zsb_tooltip = floatingTooltip('zsb_tooltip', 240);
 
-d3.csv("data/zoomable_sunburst.csv", function(error, data) {
+d3.csv("data/yelp_sun_top_200.csv", function(error, data) {
     if (error) throw error;
 
     data.forEach(function(d) {
@@ -34,13 +34,13 @@ d3.csv("data/zoomable_sunburst.csv", function(error, data) {
             var yelp_category = {
                 "name":d.yelp_category,
                 "children": [
-                    {"name":"AZ","children":[]},
+                    {"name":"LA","children":[]},
+                    {"name":"ID","children":[]},
                     {"name":"IL","children":[]},
-                    {"name":"NC","children":[]},
-                    {"name":"NV","children":[]},
-                    {"name":"OH","children":[]},
-                    {"name":"PA","children":[]},
-                    {"name":"WI","children":[]}
+                    {"name":"NJ","children":[]},
+                    {"name":"CA","children":[]},
+                    {"name":"FL","children":[]},
+                    {"name":"DE","children":[]}
                 ]
             };
             yelp_tree.children[yelp_tree.children.length] = yelp_category;
@@ -61,8 +61,6 @@ d3.csv("data/zoomable_sunburst.csv", function(error, data) {
         .on("click", click)
         .on('mouseover', showZSBDetail)
         .on('mouseout', hideZSBDetail);        
-        // .append("title")
-        // .text(function(d) { return d.data.name + "\n" + formatNumber(d.value); });
 });
 
 /*
