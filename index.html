@@ -22,6 +22,19 @@
 		function show(shown, hidden) {
   		   document.getElementById(shown).style.display='block';
   		   document.getElementById(hidden).style.display='none';
+		  if (shown === "Page2") {
+				d3.select("#zoomable_svg")
+    				.append("g")
+    				.attr("class", "annotation-group")
+    				.attr("id", "zoom_annotation")
+    				.call(zoom_makeAnnotations)
+		   } else if (shown === "Page3") {
+			d3.select("#linechart_svg")
+   			 .append("g")
+    			.attr("class", "annotation-group")
+    			.attr("id", "linechart_annotation")
+    			.call(line_makeAnnotations)
+		   }		   
                    return false;
                 }
         </script>
