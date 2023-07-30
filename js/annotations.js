@@ -25,10 +25,10 @@ const bubble_star_annotations = [
     label: "Regardless of state, the average for star ratings is beyond 4 stars",
     wrap: 190
     },
-    x: 390,
-    y: 400,
-    dy: -200,
-    dx: 200
+    x: 590,
+    y: 200,
+    dy: 200,
+    dx: -200
 }]
 
 const bubble_star_makeAnnotations = d3.annotation()
