@@ -40,12 +40,12 @@ function bubbleChart() {
 
   // X locations of the state titles.
   var stateTitle = {
-    LA: { x: width / 10, y: height / 8 },
-    ID: { x: 9 * width / 40, y: 9 * height / 20 },
+    LA: { x: (width / 10 ) - 30 , y: height / 8 },
+    ID: { x: 9 * width / 40, y: (9 * height / 20) + 170 },
     IL: { x: 7 * width / 20, y: height / 8 },
-    NJ: { x: width / 2, y: 9 * height / 20 },
+    NJ: { x: width / 2, y: (9 * height / 20) + 150 },
     CA: { x: 13 * width / 20, y: height / 8 },
-    FL: { x: 31 * width / 40, y: 9 * height / 20 },
+    FL: { x: 31 * width / 40, y: (9 * height / 20) + 100 },
     DE: { x: 9 * width / 10, y: height / 8 }
   }
 
