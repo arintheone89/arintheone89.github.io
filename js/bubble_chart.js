@@ -21,9 +21,9 @@ function bubbleChart() {
   var center = { x: width / 2, y: height / 2 };
 
   var stateCenters = {
-    LA: { x: (3 * width / 16) - 35, y: height / 3 },
-    ID: { x: width / 3, y: (2* height / 3) - 120 },
-    IL: { x: 3 * width / 8, y: height / 3 },
+    LA: { x: (3 * width / 16) + 30, y: height / 3 },
+    ID: { x: width / 3, y: (2* height / 3) },
+    IL: { x: (3 * width / 8) + 20, y: (height / 3 ) - 120 },
     NJ: { x: width / 2, y: 2* height / 3 },
     CA: { x: 5 * width / 8, y: height / 3 },
     FL: { x: 2 * width / 3, y: 2* height / 3 },
