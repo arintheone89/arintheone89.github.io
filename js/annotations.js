@@ -10,7 +10,7 @@ const bubble_state_annotations = [
     x: 200,
     y: 300,
     dy: 280,
-    dx: 10
+    dx: -90
 }]
 
 const bubble_state_makeAnnotations = d3.annotation()
