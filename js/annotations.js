@@ -44,8 +44,8 @@ const zoom_annotations = [
     label: "CA leads on Mexican cuisines. No wonder is has some of the finest restaurants.",
     wrap: 190
     },
-    x: 150,
-    y: 300,
+    x: 250,
+    y: 550,
     dy: -200,
     dx: -100
 },
@@ -58,7 +58,7 @@ const zoom_annotations = [
     },
     x: 650,
     y: 200,
-    dy: -150,
+    dy: -100,
     dx: 200
 },
 {
@@ -68,8 +68,8 @@ const zoom_annotations = [
     label: "Seafood is 2nd most popular cuisine. LA contributes 70% of the reviews",
     wrap: 190
     },
-    x: 300,
-    y: 450,
+    x: 450,
+    y: 650,
     dy: 150,
     dx: 350
 }]
