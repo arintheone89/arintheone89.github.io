@@ -27,8 +27,8 @@ const bubble_star_annotations = [
     },
     x: 390,
     y: 400,
-    dy: 0,
-    dx: 0
+    dy: -200,
+    dx: 200
 }]
 
 const bubble_star_makeAnnotations = d3.annotation()
