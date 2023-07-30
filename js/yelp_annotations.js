@@ -44,8 +44,8 @@ const zoom_annotations = [
     wrap: 190
     },
     x: 220,
-    y: 400,
-    dy: -400,
+    y: 450,
+    dy: -350,
     dx: -100
 },
 {
