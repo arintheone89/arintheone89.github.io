@@ -50,11 +50,11 @@ function bubbleChart() {
   }
 
   var starTitle = {
-    1: { x: width / 5, y: 8 * height / 20 },
-    2: { x: 13 * width / 40, y: height / 9 },
-    3: { x: width / 2, y: 8 * height / 20 },
-    4: { x: 27 * width / 40, y: height / 9 },
-    5: { x: 4 * width / 5, y: 8 * height / 20 }
+    1: { x: width / 5, y: height / 9 },
+    2: { x: 13 * width / 40, y: (height / 9) + 100 },
+    3: { x: width / 2, y: (8 * height / 20) + 150 },
+    4: { x: (27 * width / 40) + 170, y: height / 9 },
+    5: { x: 4 * width / 5, y: (8 * height / 20) + 200 }
   }
 
   // @v4 strength to apply to the position forces
