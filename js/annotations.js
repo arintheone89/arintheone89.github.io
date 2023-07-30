@@ -71,7 +71,7 @@ const zoom_annotations = [
     x: 400,
     y: 600,
     dy: 50,
-    dx: 450
+    dx: 550
 }]
 
 const zoom_makeAnnotations = d3.annotation()
