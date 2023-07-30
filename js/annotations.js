@@ -40,38 +40,38 @@ const zoom_annotations = [
 {
     type: d3.annotationLabel,
     note: {
-    title: "Clustered in NV",
-    label: "Top 25 most reviewed is mostly clustered around NV as shown by the outer ring with the same location",
+    title: "Mexican is popular in CA",
+    label: "CA leads on Mexican cuisines. No wonder is has some of the finest restaurants.",
     wrap: 190
     },
-    x: 300,
-    y: 175,
-    dy: -75,
-    dx: -120
+    x: 150,
+    y: 300,
+    dy: -200,
+    dx: -100
 },
 {
     type: d3.annotationLabel,
     note: {
     title: "Top Most Reviewed",
-    label: "American (New) restaurant category is the most reviewed restaurant category aggregated across all reviews",
+    label: "American is the most reviewed restaurant category aggregated across all reviews. LA, FL & CA has the most restaurants on this.",
     wrap: 190
     },
     x: 650,
     y: 200,
-    dy: -100,
+    dy: -150,
     dx: 200
 },
 {
     type: d3.annotationLabel,
     note: {
-    title: "Aggregated Others",
-    label: "Collection of other categories ranked 25 and onwards",
+    title: "2nd most reviewed",
+    label: "Seafood is 2nd most popular cuisine. LA contributes 70% of the reviews",
     wrap: 190
     },
-    x: 700,
-    y: 500,
+    x: 300,
+    y: 450,
     dy: 150,
-    dx: 200
+    dx: 350
 }]
 
 const zoom_makeAnnotations = d3.annotation()
