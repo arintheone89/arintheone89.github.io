@@ -25,7 +25,7 @@ const bubble_star_annotations = [
     label: "Regardless of state, the average for star ratings is beyond 4 stars",
     wrap: 190
     },
-    x: 300,
+    x: 390,
     y: 400,
     dy: 0,
     dx: 0
