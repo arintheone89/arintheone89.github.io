@@ -77,12 +77,6 @@ const zoom_makeAnnotations = d3.annotation()
     .type(d3.annotationLabel)
     .annotations(zoom_annotations)
 
-d3.select("#zoomable_svg")
-    .append("g")
-    .attr("class", "annotation-group")
-    .attr("id", "zoom_annotation")
-    .call(zoom_makeAnnotations)
-
 const line_annotations = [
 {
     type: d3.annotationLabel,
@@ -112,9 +106,3 @@ const line_annotations = [
 const line_makeAnnotations = d3.annotation()
     .type(d3.annotationLabel)
     .annotations(line_annotations)
-
-d3.select("#linechart_svg")
-    .append("g")
-    .attr("class", "annotation-group")
-    .attr("id", "linechart_annotation")
-    .call(line_makeAnnotations)
