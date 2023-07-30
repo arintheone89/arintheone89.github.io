@@ -35,7 +35,6 @@ const bubble_star_makeAnnotations = d3.annotation()
     .type(d3.annotationLabel)
     .annotations(bubble_star_annotations)
 
-// Annotations for Zoomable Sunburst
 const zoom_annotations = [       
 {
     type: d3.annotationLabel,
@@ -84,7 +83,6 @@ d3.select("#zoomable_svg")
     .attr("id", "zoom_annotation")
     .call(zoom_makeAnnotations)
 
-// Annotations for Line Chart
 const line_annotations = [
 {
     type: d3.annotationLabel,
