@@ -45,8 +45,8 @@ const zoom_annotations = [
     wrap: 190
     },
     x: 250,
-    y: 550,
-    dy: -200,
+    y: 530,
+    dy: -400,
     dx: -100
 },
 {
@@ -68,10 +68,10 @@ const zoom_annotations = [
     label: "Seafood is 2nd most popular cuisine. LA contributes 70% of the reviews",
     wrap: 190
     },
-    x: 450,
-    y: 650,
-    dy: 150,
-    dx: 350
+    x: 400,
+    y: 600,
+    dy: 50,
+    dx: 450
 }]
 
 const zoom_makeAnnotations = d3.annotation()
