@@ -40,9 +40,9 @@ function bubbleChart() {
 
   // X locations of the state titles.
   var stateTitle = {
-    LA: { x: (width / 10 ) - 30 , y: height / 8 },
-    ID: { x: 9 * width / 40, y: (9 * height / 20) + 170 },
-    IL: { x: 7 * width / 20, y: height / 8 },
+    LA: { x: (width / 10 ) - 50 , y: height / 8 },
+    ID: { x: 9 * width / 40, y: (9 * height / 20) + 190 },
+    IL: { x: (7 * width / 20) + 20, y: height / 8 },
     NJ: { x: width / 2, y: (9 * height / 20) + 150 },
     CA: { x: 13 * width / 20, y: height / 8 },
     FL: { x: 31 * width / 40, y: (9 * height / 20) + 100 },
@@ -52,9 +52,9 @@ function bubbleChart() {
   var starTitle = {
     1: { x: width / 5, y: height / 9 },
     2: { x: 13 * width / 40, y: (height / 9) + 100 },
-    3: { x: width / 2, y: (8 * height / 20) + 150 },
+    3: { x: (width / 5) + 100, y: (8 * height / 20) + 300 },
     4: { x: (27 * width / 40) + 170, y: height / 9 },
-    5: { x: 4 * width / 5, y: (8 * height / 20) + 200 }
+    5: { x: (4 * width / 5) + 100, y: (8 * height / 20) + 400 }
   }
 
   // @v4 strength to apply to the position forces
