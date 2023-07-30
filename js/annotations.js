@@ -44,7 +44,7 @@ const zoom_annotations = [
     label: "CA leads on Mexican cuisines. No wonder is has some of the finest restaurants.",
     wrap: 190
     },
-    x: 250,
+    x: 220,
     y: 400,
     dy: -400,
     dx: -100
