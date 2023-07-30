@@ -1,15 +1,7 @@
-  /* body{
-    background-color: whitesmoke;
-  } */
 
 :root {
   --annotation-color: #E8336D;
 }
-
-/* #annotation_svg {
-    background-color: white;
-    font-family: 'Lato';
-  } */
 
 .annotation path {
   stroke: var(--annotation-color);
@@ -30,10 +22,6 @@
   font-weight: bold;
   font-size: 1.2em;
 }
-
-/* text.title {
-  font-size: 2em;
-} */
 
 .hidden {
   display: none;
