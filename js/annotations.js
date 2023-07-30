@@ -10,7 +10,7 @@ const bubble_state_annotations = [
     x: 200,
     y: 300,
     dy: 280,
-    dx: 40
+    dx: 10
 }]
 
 const bubble_state_makeAnnotations = d3.annotation()
@@ -21,7 +21,7 @@ const bubble_star_annotations = [
 {
     type: d3.annotationLabel,
     note: {
-    title: "Average 2-4 Stars",
+    title: "Average 4-4.5 Stars",
     label: "Regardless of state, the average for star ratings is beyond 4 stars",
     wrap: 190
     },
